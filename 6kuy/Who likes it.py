@@ -1,0 +1,2 @@
+def likes(l: list) -> str:
+    return ('no one' if len(l) == 0 else l[0]) + ' likes this' if len(l) <= 1 else ((f'{l[0]}, {l[1]} and {len(l) - 2} others') if len(l) > 3 else f'{l[0]}, {l[1]} and {l[2]}'if len(l) == 3 else f'{l[0]} and {l[1]}') +' like this'
